@@ -32,13 +32,13 @@ https://github.com/lagreve/grevons/issues
 Toutes reproductions, réutilisations et appropriations sont fortement recommandés. Le projet est sous licence public et quiconque en a l'envie peut simplement lancer sa propre version de grevons.
 
 ### Support technique
-Nous ne fournissons aucun support technique, mais vous trouverez toute les documentations nécessaires sur les sites suivants :
-—
-Framework : Meteor.js
-—
-Design et mise en page : Semantic-ui
-—
-Blockchain : Steem-js
-—
-Service d'authentification : auth0.com
+Nous ne fournissons aucun support technique, mais vous trouverez toute les documentations nécessaires sur les sites suivants :  
+
+Framework : Meteor.js  
+
+Design et mise en page : Semantic-ui  
+
+Blockchain : Steem-js  
+
+Service d'authentification : auth0.com  
 
