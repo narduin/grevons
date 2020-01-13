@@ -33,8 +33,12 @@ Toutes reproductions, réutilisations et appropriations sont fortement recommand
 
 ### Support technique
 Nous ne fournissons aucun support technique, mais vous trouverez toute les documentations nécessaires sur les sites suivants :
+—
 Framework : Meteor.js
+—
 Design et mise en page : Semantic-ui
+—
 Blockchain : Steem-js
+—
 Service d'authentification : auth0.com
 
