@@ -34,11 +34,11 @@ Toutes reproductions, réutilisations et appropriations sont fortement recommand
 ### Support technique
 Nous ne fournissons aucun support technique, mais vous trouverez toute les documentations nécessaires sur les sites suivants :  
 
-Framework : Meteor.js  
+Framework : Meteor.js https://www.meteor.com/   
 
-Design et mise en page : Semantic-ui  
+Design et mise en page : Semantic-ui https://semantic-ui.com/  
 
-Blockchain : Steem-js  
+Blockchain : Steem-js https://github.com/steemit/steem-js  
 
-Service d'authentification : auth0.com  
+Service d'authentification : auth0.com https://auth0.com/  
 
