@@ -1,0 +1,60 @@
+<template name="sidebar">
+    <div class="ui sidebar vertical menu">
+        <div class="item">
+            <img class="ui fluid small image" src="./images/logo.png">
+        </div>
+        <a id="feed" href="/" class="item">
+            <i class="home icon"></i> Accueil
+        </a>
+        <div class="item">
+            {{#with mainuser}}
+            Bienvenue, {{name}}
+            <div class="ui inverted vertical menu">
+                <a id="blog" href="/@{{name}}" class="item"> <i class="user icon"></i>Mon profil</a>
+                <a id="comments" href="/@{{name}}/comments" class="item"> <i class="comment icon"></i>Commentaires</a>
+                <a id="replies" href="/@{{name}}/replies" class="item"> <i class="comments icon"></i>Réponses</a>
+            </div>
+            {{/with}}
+        </div>
+        {{#with mainuser}}
+        <a href="/create" class="item">
+            <i class="pencil icon"></i> New post
+        </a>
+        {{/with}}
+        {{#unless mainuser}}
+        <a class="item" id="login">
+           Se connecter
+        </a>
+        <a class="item" id="signup" href="/signup">
+            Se déconnecter
+        </a>
+        {{/unless}}
+
+        {{#unless mainuser}}
+      
+        {{/unless}}
+        <div class="item">
+            {{bindsearch}}
+            <div class="ui right aligned category search item">
+                <div class="ui transparent inverted icon input">
+                    <input class="prompt" type="text" placeholder="Recherche ...">
+                    <i class="search link icon"></i>
+                </div>
+                <div class="results"></div>
+            </div>
+        </div>
+        {{#with mainuser}}
+        <a class="item" id="logout">
+            <i class="external icon"></i> Se déconnecter
+        </a>
+        {{/with}}
+        <div class="item">
+            {{#each customTags}}
+            <div>
+                <a id="tag">#{{category}}</a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+</template>

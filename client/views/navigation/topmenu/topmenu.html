@@ -1,0 +1,51 @@
+<template name="topmenu">
+	<div class="ui main menu">
+		<div class="ui container fluid p0">
+				<a id="display-menu" class="header item mn">
+						<i class="content icon"></i>
+					</a>
+			<div class="ui grid logo padded">
+				<a href="/" class="item">
+					<img class="ui fluid small image" src="./images/logo.png">
+				</a>
+			</div>
+			<div class="ui grid compact menu computer only">
+				<a id="tag" class="item grevons purple home top cat">
+					ACCUEIL
+				</a>
+				{{#each customTags}}
+				<a id="tag" class="item grevons {{color}} {{category}} top cat">
+					{{#if equals category 'benevolat'}}
+					JE SUIS BENEVOLE
+					{{else}}
+					{{#if equals category 'greviste'}}
+					JE SUIS GREVISTE
+					{{else}}
+					{{category}}
+					{{/if}}
+					{{/if}}
+				</a>
+				{{/each}}
+			</div>
+			<div class="right menu">
+				<div class="ui grid padded large screen only">
+					<div class="item">
+						{{bindsearch}}
+						<div class="ui search">
+							<div class="ui transparent inverted icon input">
+								<input class="prompt" type="text" placeholder="Search ...">
+								<i class="search link icon"></i>
+							</div>
+							<div class="results"></div>
+						</div>
+					</div>
+				</div>
+				{{#if profile}}
+				{{> dropdownprofile}}
+				{{else}}
+				<div id="login" class="item">Connexion</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</template>

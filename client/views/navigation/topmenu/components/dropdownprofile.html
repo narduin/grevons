@@ -1,0 +1,17 @@
+<template name="dropdownprofile">
+    <div class="ui divider"></div>
+    <div class="ui item dropdown profile right floated">
+        {{profile.nickname}}
+        <div class="ui avatar image ml-1">
+            <img src="{{profile.picture}}">
+        </div>
+        <i class="dropdown icon"></i>
+        <div class="ui vertical menu">
+            <a id="create" href="/create" class="item"> <i class="pencil alternate icon"></i>Nouveau post</a>
+            <a id="blog" href="/@{{name}}" class="item"> <i class="user icon"></i>Mon profil</a>
+            <a id="comments" href="/@{{name}}/comments" class="item"> <i class="comment icon"></i>Commentaires</a>
+            <a id="replies" href="/@{{name}}/replies" class="item"> <i class="comments icon"></i>Réponses</a>
+            <div id="logout" class="item logout"> <i class="sign out icon"></i>Se déconnecter</div>
+        </div>
+    </div>
+</template>

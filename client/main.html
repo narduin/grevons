@@ -1,0 +1,25 @@
+<head>
+  <title>Grevons</title>
+  <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+</body>
+
+<template name="mainlayout">
+    {{> Template.dynamic template=sidebar}}
+    <div class="pusher side">
+      <div class="ui fluid p0 m0">
+        <div class="sixteen wide column">
+          {{> Template.dynamic template=topmenu}}
+          <article class="article">
+            {{> Template.dynamic template=main}}
+          </article>
+          {{> footer}}
+        </div>
+      </div>
+  </div>
+</template>
